@@ -1,7 +1,10 @@
+//счётчик - машина для голосования
+
 public class Counter implements Comparable<Counter> {
+
     private final String name;
     private final int maxCount;
-    private int count;
+    private int count;          //private - нельзя изменить извне - гарантия, что подсчёт голосов будет верный
 
     public Counter(String id, int max) {
         name = id;
@@ -9,7 +12,7 @@ public class Counter implements Comparable<Counter> {
         count = 0;
     }
 
-    public void increment() {
+    public void increment() {   //гарантия, что с числом может произойти только 1 операция +1
         if (count < maxCount)
             count++;
     }
@@ -24,9 +27,9 @@ public class Counter implements Comparable<Counter> {
 
     // compare two Counter objects based on their count
     public int compareTo(Counter that) {
-        if      (this.count < that.count) return -1;
+        if (this.count < that.count) return -1;
         else if (this.count > that.count) return +1;
-        else                              return  0;
+        else return 0;
     }
 
     public static void main(String[] args) {

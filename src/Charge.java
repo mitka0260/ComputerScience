@@ -43,7 +43,7 @@ public class Charge {
         return q + " at " + "(" + rx + ", " + ry + ")";
     }
 
-    //здесь этот меод нужен только для тестирования
+    //здесь этот метод нужен только для тестирования
     public static void main(String[] args) {
         double x = Double.parseDouble(args[0]);     //проверяемая точка
         double y = Double.parseDouble(args[1]);
