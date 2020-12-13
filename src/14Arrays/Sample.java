@@ -11,7 +11,7 @@ public class Sample {
 		int m = Integer.parseInt(args[0]);	//6
 		int n = Integer.parseInt(args[1]);	//16
 
-		int[] perm = new int[n];		//создали массив длинной n
+		int[] perm = new int[n];		//создали массив длинной n=16
 
 		for (int j = 0; j<n; j++) {
 			perm[j] = j;		//заполнили массив числами 0, 1, 2, 3, ... до n-1

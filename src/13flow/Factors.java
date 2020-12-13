@@ -4,7 +4,7 @@ public class Factors {
         /*разложение n на простые множители
          */
 
-        long n = 45;
+        long n = 48;
 
         for (long factor = 2; factor <= n / factor; factor++) {
 
