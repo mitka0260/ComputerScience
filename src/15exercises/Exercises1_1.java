@@ -11,7 +11,7 @@ public class Exercises1_1 {
 			int value = StdIn.readInt();
 
 				if (value<=0)
-					System.out.println("The programm processes only positive values");
+					System.out.println("The programme processes only positive values");
 				else {
 					if (value>max) max = value;
 					if (value<min) min = value;

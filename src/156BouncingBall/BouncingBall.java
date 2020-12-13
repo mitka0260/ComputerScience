@@ -4,10 +4,10 @@ public class BouncingBall {
 		StdDraw.setXscale(-1.0, 1.0);
 		StdDraw.setYscale(-1.0, 1.0);
 
-		double rx = 0.480;
-		double ry = 0.860;
-		double vx = 0.015;
-		double vy = 0.023;
+		double rx = 0.480;	//текущая позиция
+		double ry = 0.860;	//текущая позиция
+		double vx = 0.015;	//прибавление к текущей позиции
+		double vy = 0.023;	//vx + vy = определяют скорость
 		double radius = 0.05;
 		
 		StdDraw.enableDoubleBuffering();
@@ -18,7 +18,7 @@ public class BouncingBall {
 			rx += vx;
 			ry += vy;
 			StdDraw.clear();
-			StdDraw.filledCircle(rx, vy, radius);
+			StdDraw.filledCircle(rx, ry, radius);
 			StdDraw.show();
 			StdDraw.pause(20);
 		}
